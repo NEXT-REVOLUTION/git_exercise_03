@@ -12,4 +12,15 @@ def names(sales)
   end
 end
 
+def under300_count(sales)
+  count = 0
+  sales.each do | s |
+    if s[:sale] <= 300
+      count += 1
+    end
+  end
+  puts count
+end
+
 names(sales)
+under300_count(sales)
