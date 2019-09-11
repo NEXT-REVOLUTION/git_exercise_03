@@ -5,3 +5,11 @@ sales = [{name: "hokkaido", sale: 150},
          {name: "kinki",    sale: 400},
          {name: "chugoku",  sale: 140},
          {name: "kyusyu",   sale: 120}]
+
+def names(sales)
+  sales.each do | s |
+    puts s[:name]
+  end
+end
+
+names(sales)
