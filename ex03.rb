@@ -12,4 +12,13 @@ def names(sales)
   end
 end
 
+def sum(sales)
+  sum_sale = 0
+  sales.each do | s |
+    sum_sale += s[:sale]
+  end
+  puts sum_sale
+end
+
 names(sales)
+sum(sales)
